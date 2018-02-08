@@ -1,0 +1,14 @@
+C:\Users\jmclaughlin6572\Desktop\ScrapingTest\ScrapingTest\ScrapingTest\bin\Debug\ScrapingTest.exe.config
+C:\Users\jmclaughlin6572\Desktop\ScrapingTest\ScrapingTest\ScrapingTest\bin\Debug\ScrapingTest.exe
+C:\Users\jmclaughlin6572\Desktop\ScrapingTest\ScrapingTest\ScrapingTest\bin\Debug\ScrapingTest.pdb
+C:\Users\jmclaughlin6572\Desktop\ScrapingTest\ScrapingTest\ScrapingTest\bin\Debug\FSharp.Core.dll
+C:\Users\jmclaughlin6572\Desktop\ScrapingTest\ScrapingTest\ScrapingTest\bin\Debug\HtmlAgilityPack.dll
+C:\Users\jmclaughlin6572\Desktop\ScrapingTest\ScrapingTest\ScrapingTest\bin\Debug\ScrapySharp.Core.dll
+C:\Users\jmclaughlin6572\Desktop\ScrapingTest\ScrapingTest\ScrapingTest\bin\Debug\ScrapySharpAsync.dll
+C:\Users\jmclaughlin6572\Desktop\ScrapingTest\ScrapingTest\ScrapingTest\bin\Debug\FSharp.Core.xml
+C:\Users\jmclaughlin6572\Desktop\ScrapingTest\ScrapingTest\ScrapingTest\bin\Debug\HtmlAgilityPack.pdb
+C:\Users\jmclaughlin6572\Desktop\ScrapingTest\ScrapingTest\ScrapingTest\bin\Debug\HtmlAgilityPack.xml
+C:\Users\jmclaughlin6572\Desktop\ScrapingTest\ScrapingTest\ScrapingTest\obj\Debug\ScrapingTest.csprojResolveAssemblyReference.cache
+C:\Users\jmclaughlin6572\Desktop\ScrapingTest\ScrapingTest\ScrapingTest\obj\Debug\ScrapingTest.csproj.CoreCompileInputs.cache
+C:\Users\jmclaughlin6572\Desktop\ScrapingTest\ScrapingTest\ScrapingTest\obj\Debug\ScrapingTest.exe
+C:\Users\jmclaughlin6572\Desktop\ScrapingTest\ScrapingTest\ScrapingTest\obj\Debug\ScrapingTest.pdb
