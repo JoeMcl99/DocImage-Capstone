@@ -13,12 +13,12 @@ namespace DocImageClient
 {
     public partial class Form1 : Form
     {
-     
+        DocImageServerClient proxy = new DocImageServerClient();
         public Form1()
         {
             InitializeComponent();
-           // DocImageServerClient proxy = new DocImageServerClient();
-            //txtExample.Text = proxy.scrapeTest();
+            
+
 
         }
 
@@ -44,6 +44,11 @@ namespace DocImageClient
         {
             panel1.Visible = false;
             panel2.Visible = true;
+        }
+
+        private void btnSingleSearch_Click(object sender, EventArgs e)
+        {
+            txtSingleResult.Text = proxy.scrapeTest();
         }
     }
 }
