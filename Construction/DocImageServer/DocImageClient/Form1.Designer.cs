@@ -33,7 +33,7 @@
             // 
             // txtExample
             // 
-            this.txtExample.Location = new System.Drawing.Point(53, 54);
+            this.txtExample.Location = new System.Drawing.Point(53, 12);
             this.txtExample.Name = "txtExample";
             this.txtExample.Size = new System.Drawing.Size(100, 20);
             this.txtExample.TabIndex = 0;
@@ -42,7 +42,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 262);
+            this.ClientSize = new System.Drawing.Size(377, 334);
             this.Controls.Add(this.txtExample);
             this.Name = "Form1";
             this.Text = "Form1";

@@ -18,3 +18,13 @@ C:\Users\Joe\Documents\Conestoga\Capstone\CapstoneGit\DocImage-Capstone\Construc
 C:\Users\Joe\Documents\Conestoga\Capstone\CapstoneGit\DocImage-Capstone\Construction\DocImageServer\DocImageClient\obj\Debug\DocImageClient.csproj.CoreCompileInputs.cache
 C:\Users\Joe\Documents\Conestoga\Capstone\CapstoneGit\DocImage-Capstone\Construction\DocImageServer\DocImageClient\obj\Debug\DocImageClient.exe
 C:\Users\Joe\Documents\Conestoga\Capstone\CapstoneGit\DocImage-Capstone\Construction\DocImageServer\DocImageClient\obj\Debug\DocImageClient.pdb
+C:\Users\jmclaughlin6572\Desktop\DocImage-Capstone\Construction\DocImageServer\DocImageClient\bin\Debug\DocImageClient.exe.config
+C:\Users\jmclaughlin6572\Desktop\DocImage-Capstone\Construction\DocImageServer\DocImageClient\bin\Debug\DocImageClient.exe
+C:\Users\jmclaughlin6572\Desktop\DocImage-Capstone\Construction\DocImageServer\DocImageClient\bin\Debug\DocImageClient.pdb
+C:\Users\jmclaughlin6572\Desktop\DocImage-Capstone\Construction\DocImageServer\DocImageClient\obj\Debug\DocImageClient.csprojResolveAssemblyReference.cache
+C:\Users\jmclaughlin6572\Desktop\DocImage-Capstone\Construction\DocImageServer\DocImageClient\obj\Debug\DocImageClient.Form1.resources
+C:\Users\jmclaughlin6572\Desktop\DocImage-Capstone\Construction\DocImageServer\DocImageClient\obj\Debug\DocImageClient.Properties.Resources.resources
+C:\Users\jmclaughlin6572\Desktop\DocImage-Capstone\Construction\DocImageServer\DocImageClient\obj\Debug\DocImageClient.csproj.GenerateResource.Cache
+C:\Users\jmclaughlin6572\Desktop\DocImage-Capstone\Construction\DocImageServer\DocImageClient\obj\Debug\DocImageClient.csproj.CoreCompileInputs.cache
+C:\Users\jmclaughlin6572\Desktop\DocImage-Capstone\Construction\DocImageServer\DocImageClient\obj\Debug\DocImageClient.exe
+C:\Users\jmclaughlin6572\Desktop\DocImage-Capstone\Construction\DocImageServer\DocImageClient\obj\Debug\DocImageClient.pdb
