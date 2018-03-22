@@ -13,12 +13,37 @@ namespace DocImageClient
 {
     public partial class Form1 : Form
     {
+     
         public Form1()
         {
             InitializeComponent();
-            DocImageServerClient proxy = new DocImageServerClient();
-            txtExample.Text = proxy.scrapeTest();
+           // DocImageServerClient proxy = new DocImageServerClient();
+            //txtExample.Text = proxy.scrapeTest();
 
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            panel1.Visible = true;
+            panel2.Visible = false;
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+            panel1.Visible = true;
+            panel2.Visible = false;
+        }
+
+        private void single_Btn_Click(object sender, EventArgs e)
+        {
+            panel1.Visible = false;
+            panel2.Visible = true;
         }
     }
 }
