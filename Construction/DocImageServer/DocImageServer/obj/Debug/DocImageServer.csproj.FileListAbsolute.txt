@@ -55,3 +55,17 @@ C:\Users\jzabar7531\Desktop\DocImage-Capstone\Construction\DocImageServer\DocIma
 C:\Users\jzabar7531\Desktop\DocImage-Capstone\Construction\DocImageServer\DocImageServer\obj\Debug\DocImageServer.csproj.CoreCompileInputs.cache
 C:\Users\jzabar7531\Desktop\DocImage-Capstone\Construction\DocImageServer\DocImageServer\obj\Debug\DocImageServer.dll
 C:\Users\jzabar7531\Desktop\DocImage-Capstone\Construction\DocImageServer\DocImageServer\obj\Debug\DocImageServer.pdb
+C:\Users\msavatdy\Desktop\DocImage-Capstone\Construction\DocImageServer\DocImageServer\bin\Debug\DocImageServer.dll.config
+C:\Users\msavatdy\Desktop\DocImage-Capstone\Construction\DocImageServer\DocImageServer\bin\Debug\DocImageServer.dll
+C:\Users\msavatdy\Desktop\DocImage-Capstone\Construction\DocImageServer\DocImageServer\bin\Debug\DocImageServer.pdb
+C:\Users\msavatdy\Desktop\DocImage-Capstone\Construction\DocImageServer\DocImageServer\bin\Debug\FSharp.Core.dll
+C:\Users\msavatdy\Desktop\DocImage-Capstone\Construction\DocImageServer\DocImageServer\bin\Debug\HtmlAgilityPack.dll
+C:\Users\msavatdy\Desktop\DocImage-Capstone\Construction\DocImageServer\DocImageServer\bin\Debug\ScrapySharp.Core.dll
+C:\Users\msavatdy\Desktop\DocImage-Capstone\Construction\DocImageServer\DocImageServer\bin\Debug\ScrapySharpAsync.dll
+C:\Users\msavatdy\Desktop\DocImage-Capstone\Construction\DocImageServer\DocImageServer\bin\Debug\FSharp.Core.xml
+C:\Users\msavatdy\Desktop\DocImage-Capstone\Construction\DocImageServer\DocImageServer\bin\Debug\HtmlAgilityPack.pdb
+C:\Users\msavatdy\Desktop\DocImage-Capstone\Construction\DocImageServer\DocImageServer\bin\Debug\HtmlAgilityPack.xml
+C:\Users\msavatdy\Desktop\DocImage-Capstone\Construction\DocImageServer\DocImageServer\obj\Debug\DocImageServer.csprojResolveAssemblyReference.cache
+C:\Users\msavatdy\Desktop\DocImage-Capstone\Construction\DocImageServer\DocImageServer\obj\Debug\DocImageServer.csproj.CoreCompileInputs.cache
+C:\Users\msavatdy\Desktop\DocImage-Capstone\Construction\DocImageServer\DocImageServer\obj\Debug\DocImageServer.dll
+C:\Users\msavatdy\Desktop\DocImage-Capstone\Construction\DocImageServer\DocImageServer\obj\Debug\DocImageServer.pdb
