@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="9a7de7cc-a00b-462c-ae4d-7e757850aea6" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="9cc91c76-bdba-4114-9b87-88d1dfcde48d" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
   <ClientOptions>
     <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
     <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
@@ -22,9 +22,9 @@
     <MetadataSource Address="http://localhost:8733/Design_Time_Addresses/DocImageServer/Service1/mex" Protocol="mex" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="service.wsdl" MetadataType="Wsdl" ID="49814beb-b0ca-47a1-b393-609e2050034a" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/DocImageServer/Service1/mex" />
-    <MetadataFile FileName="service.xsd" MetadataType="Schema" ID="3b2b6d5f-dc96-4312-a990-7d27e73be1b2" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/DocImageServer/Service1/mex" />
-    <MetadataFile FileName="service1.xsd" MetadataType="Schema" ID="e4176709-47f4-4591-8508-65c97649c7c8" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/DocImageServer/Service1/mex" />
+    <MetadataFile FileName="service.wsdl" MetadataType="Wsdl" ID="aa3b7175-c13f-4db5-853a-aa65f1a876e5" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/DocImageServer/Service1/mex" />
+    <MetadataFile FileName="service.xsd" MetadataType="Schema" ID="74e26332-796b-4e7f-8426-09b80f406a10" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/DocImageServer/Service1/mex" />
+    <MetadataFile FileName="service1.xsd" MetadataType="Schema" ID="2895adc3-86e3-4409-be86-7edddbe677cb" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/DocImageServer/Service1/mex" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

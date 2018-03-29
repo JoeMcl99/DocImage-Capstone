@@ -47,7 +47,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Connected Services\DocImageReference\Reference.cs">
+    <Compile Include="Connected Services\DocImageServiceReference\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
@@ -72,11 +72,11 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <None Include="Connected Services\DocImageReference\service.wsdl" />
-    <None Include="Connected Services\DocImageReference\service.xsd">
+    <None Include="Connected Services\DocImageServiceReference\service.wsdl" />
+    <None Include="Connected Services\DocImageServiceReference\service.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Connected Services\DocImageReference\service1.xsd">
+    <None Include="Connected Services\DocImageServiceReference\service1.xsd">
       <SubType>Designer</SubType>
     </None>
     <None Include="Properties\Settings.settings">
@@ -96,16 +96,16 @@
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <ItemGroup>
-    <WCFMetadataStorage Include="Connected Services\DocImageReference\" />
+    <WCFMetadataStorage Include="Connected Services\DocImageServiceReference\" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Connected Services\DocImageReference\configuration91.svcinfo" />
+    <None Include="Connected Services\DocImageServiceReference\configuration91.svcinfo" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Connected Services\DocImageReference\configuration.svcinfo" />
+    <None Include="Connected Services\DocImageServiceReference\configuration.svcinfo" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Connected Services\DocImageReference\Reference.svcmap">
+    <None Include="Connected Services\DocImageServiceReference\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>

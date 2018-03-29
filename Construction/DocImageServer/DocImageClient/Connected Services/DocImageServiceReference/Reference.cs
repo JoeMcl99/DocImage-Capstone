@@ -8,11 +8,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace DocImageClient.DocImageReference {
+namespace DocImageClient.DocImageServiceReference {
     
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="DocImageReference.IDocImageServer")]
+    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="DocImageServiceReference.IDocImageServer")]
     public interface IDocImageServer {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IDocImageServer/GetData", ReplyAction="http://tempuri.org/IDocImageServer/GetDataResponse")]
@@ -22,19 +22,19 @@ namespace DocImageClient.DocImageReference {
         System.Threading.Tasks.Task<string> GetDataAsync(int value);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IDocImageServer/scrapeTest", ReplyAction="http://tempuri.org/IDocImageServer/scrapeTestResponse")]
-        string scrapeTest();
+        string scrapeTest(string hstNumber, string legalName);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IDocImageServer/scrapeTest", ReplyAction="http://tempuri.org/IDocImageServer/scrapeTestResponse")]
-        System.Threading.Tasks.Task<string> scrapeTestAsync();
+        System.Threading.Tasks.Task<string> scrapeTestAsync(string hstNumber, string legalName);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public interface IDocImageServerChannel : DocImageClient.DocImageReference.IDocImageServer, System.ServiceModel.IClientChannel {
+    public interface IDocImageServerChannel : DocImageClient.DocImageServiceReference.IDocImageServer, System.ServiceModel.IClientChannel {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public partial class DocImageServerClient : System.ServiceModel.ClientBase<DocImageClient.DocImageReference.IDocImageServer>, DocImageClient.DocImageReference.IDocImageServer {
+    public partial class DocImageServerClient : System.ServiceModel.ClientBase<DocImageClient.DocImageServiceReference.IDocImageServer>, DocImageClient.DocImageServiceReference.IDocImageServer {
         
         public DocImageServerClient() {
         }
@@ -63,12 +63,12 @@ namespace DocImageClient.DocImageReference {
             return base.Channel.GetDataAsync(value);
         }
         
-        public string scrapeTest() {
-            return base.Channel.scrapeTest();
+        public string scrapeTest(string hstNumber, string legalName) {
+            return base.Channel.scrapeTest(hstNumber, legalName);
         }
         
-        public System.Threading.Tasks.Task<string> scrapeTestAsync() {
-            return base.Channel.scrapeTestAsync();
+        public System.Threading.Tasks.Task<string> scrapeTestAsync(string hstNumber, string legalName) {
+            return base.Channel.scrapeTestAsync(hstNumber, legalName);
         }
     }
 }

@@ -20,7 +20,7 @@ namespace DocImageServer
             return string.Format("You entered: {0}", value);
         }
 
-        public string scrapeTest()
+        public string scrapeTest(string hstNumber, string legalName)
         {
             //Setting up the Browser
             System.Net.ServicePointManager.SecurityProtocol = System.Net.SecurityProtocolType.Tls12;
@@ -46,20 +46,29 @@ namespace DocImageServer
 
             //Finding the HST Form
             PageWebForm registryForm = registryPage.FindFormById("registryPromptSubmit");
-            
+
             //Inputting the values into the HST Form
-            registryForm.FormFields[0].Value = "130502719";
-            registryForm.FormFields[1].Value = "Morrison Hershfield Limited";
-            registryForm.FormFields[2].Value = "2018-03-21";
+
+
+            //Proper Name and Number for testing
+            //"130502719"
+            //"Morrison Hershfield Limited"
+
+            registryForm.FormFields[0].Value = hstNumber;
+            registryForm.FormFields[1].Value = legalName;
+            registryForm.FormFields[2].Value = "2018-03-29";
             WebPage submittedPage = registryForm.Submit();
 
-            HtmlNode resultNode = submittedPage.Html.CssSelect("main div").ElementAt(10);
-            bool hstResult = resultNode.InnerHtml.Contains("GST/HST number registered on this transaction date.");
-            if (hstResult)
+
+            IEnumerable<HtmlNode> resultNode = submittedPage.Html.CssSelect("main div");
+            if (resultNode.Count() != 10)
             {
-                return "GST / HST number registered on this transaction date";
-            }
+                HtmlNode correctNode = resultNode.ElementAt(10);
+                return "GST / HST number registered on this transaction date";               
+            }                        
             else return "Was not Successful";
+
+
         }
     }
 }

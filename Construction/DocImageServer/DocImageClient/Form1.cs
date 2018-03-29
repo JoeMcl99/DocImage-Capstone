@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using DocImageClient.DocImageReference;
+using DocImageClient.DocImageServiceReference;
 
 namespace DocImageClient
 {
@@ -48,7 +48,7 @@ namespace DocImageClient
 
         private void btnSingleSearch_Click(object sender, EventArgs e)
         {
-            txtSingleResult.Text = proxy.scrapeTest();
+            txtSingleResult.Text = proxy.scrapeTest(txtSingleHstNumber.Text, txtSingleBusinessName.Text);
         }
     }
 }
