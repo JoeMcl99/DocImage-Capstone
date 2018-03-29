@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="13720a9c-15d5-4c98-b308-f84ee5b96da5" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="9cc91c76-bdba-4114-9b87-88d1dfcde48d" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
   <ClientOptions>
     <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
     <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
@@ -22,10 +22,9 @@
     <MetadataSource Address="http://localhost:8733/Design_Time_Addresses/DocImageServer/Service1/mex" Protocol="mex" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="service.wsdl" MetadataType="Wsdl" ID="22e18244-c703-4463-93b7-fe5e4ee8324b" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/DocImageServer/Service1/mex" />
-    <MetadataFile FileName="service.xsd" MetadataType="Schema" ID="1303d77b-04ba-4322-8a87-872dae277a0a" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/DocImageServer/Service1/mex" />
-    <MetadataFile FileName="service1.xsd" MetadataType="Schema" ID="ea480187-4715-48ae-8837-e4f971681ce6" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/DocImageServer/Service1/mex" />
-    <MetadataFile FileName="Arrays.xsd" MetadataType="Schema" ID="bc0f2bcd-ab73-4f96-bae5-470447adc285" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/DocImageServer/Service1/mex" />
+    <MetadataFile FileName="service.wsdl" MetadataType="Wsdl" ID="aa3b7175-c13f-4db5-853a-aa65f1a876e5" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/DocImageServer/Service1/mex" />
+    <MetadataFile FileName="service.xsd" MetadataType="Schema" ID="74e26332-796b-4e7f-8426-09b80f406a10" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/DocImageServer/Service1/mex" />
+    <MetadataFile FileName="service1.xsd" MetadataType="Schema" ID="2895adc3-86e3-4409-be86-7edddbe677cb" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/DocImageServer/Service1/mex" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

@@ -35,6 +35,8 @@ namespace DocImageClient
         }
 
 
+
+        
         //private boolean is logeed in successfull
     }
 }

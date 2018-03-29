@@ -22,10 +22,10 @@ namespace DocImageClient.DocImageServiceReference {
         System.Threading.Tasks.Task<string> GetDataAsync(int value);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IDocImageServer/scrapeTest", ReplyAction="http://tempuri.org/IDocImageServer/scrapeTestResponse")]
-        System.Collections.Generic.Dictionary<string, bool> scrapeTest(string hstNumber, string legalName);
+        string scrapeTest(string hstNumber, string legalName);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IDocImageServer/scrapeTest", ReplyAction="http://tempuri.org/IDocImageServer/scrapeTestResponse")]
-        System.Threading.Tasks.Task<System.Collections.Generic.Dictionary<string, bool>> scrapeTestAsync(string hstNumber, string legalName);
+        System.Threading.Tasks.Task<string> scrapeTestAsync(string hstNumber, string legalName);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -63,11 +63,11 @@ namespace DocImageClient.DocImageServiceReference {
             return base.Channel.GetDataAsync(value);
         }
         
-        public System.Collections.Generic.Dictionary<string, bool> scrapeTest(string hstNumber, string legalName) {
+        public string scrapeTest(string hstNumber, string legalName) {
             return base.Channel.scrapeTest(hstNumber, legalName);
         }
         
-        public System.Threading.Tasks.Task<System.Collections.Generic.Dictionary<string, bool>> scrapeTestAsync(string hstNumber, string legalName) {
+        public System.Threading.Tasks.Task<string> scrapeTestAsync(string hstNumber, string legalName) {
             return base.Channel.scrapeTestAsync(hstNumber, legalName);
         }
     }

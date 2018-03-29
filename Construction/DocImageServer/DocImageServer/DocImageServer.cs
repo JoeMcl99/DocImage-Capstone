@@ -20,30 +20,8 @@ namespace DocImageServer
             return string.Format("You entered: {0}", value);
         }
 
-
-        public Dictionary<string, bool> scrapeTest(string hstNumber, string legalName)
+        public string scrapeTest(string hstNumber, string legalName)
         {
-            //TODO: Add records to the database as they come
-            Dictionary<string, bool> returnDictionary = new Dictionary<string, bool>();
-
-            int throwaway;
-            if (hstNumber.Length != 9)
-            {
-                returnDictionary.Add("HSTNumberNot9Digits", true);
-            }
-            if (int.TryParse(hstNumber, out throwaway))
-            {
-                returnDictionary.Add("HSTNumberNotNumeric", true);
-            }
-            if (legalName == "")
-            {
-                returnDictionary.Add("LegalNameEmpty", true);
-            }
-
-
-
-
-
             //Setting up the Browser
             System.Net.ServicePointManager.SecurityProtocol = System.Net.SecurityProtocolType.Tls12;
             ScrapingBrowser browser = new ScrapingBrowser();
@@ -53,15 +31,15 @@ namespace DocImageServer
             //Goes to the Canada Revenue Agency Website and presses the Search Now button
             WebPage homePage = browser.NavigateToPage(new Uri("https://www.canada.ca/en/revenue-agency/services/e-services/e-services-businesses/confirming-a-gst-hst-account-number.html"));
             WebPage blogPage = homePage.FindLinks(By.Text("Search now")).Single().Click();
-
-
+            
+            
             //Finds the form for the terms and conditions, and submits it 
             HtmlNode termsForm = blogPage.Html.CssSelect("form").ElementAt(1);
             PageWebForm acceptForm = new PageWebForm(termsForm, browser);
             WebPage registryPage = acceptForm.Submit();
 
-
-            //Changing the Business name element from a textarea to a text input so that it can be filled and submitted
+                        
+           //Changing the Business name element from a textarea to a text input so that it can be filled and submitted
             HtmlNode newbusinessName = registryPage.Html.CssSelect("#businessName").Single();
             newbusinessName.Name = "input";
             newbusinessName.SetAttributeValue("type", "text");
@@ -86,9 +64,11 @@ namespace DocImageServer
             if (resultNode.Count() != 10)
             {
                 HtmlNode correctNode = resultNode.ElementAt(10);
-                returnDictionary.Add("IsCorrect", true);
-            }
-            return returnDictionary;
+                return "GST / HST number registered on this transaction date";               
+            }                        
+            else return "Was not Successful";
+
+
         }
     }
 }
