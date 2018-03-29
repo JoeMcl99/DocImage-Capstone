@@ -42,8 +42,13 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.txtSingleResult = new System.Windows.Forms.TextBox();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txtCsv = new System.Windows.Forms.TextBox();
+            this.btnUpload = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // exit_Btn
@@ -72,6 +77,7 @@
             this.chkList_Btn.TabIndex = 6;
             this.chkList_Btn.Text = "Check List";
             this.chkList_Btn.UseVisualStyleBackColor = true;
+            this.chkList_Btn.Click += new System.EventHandler(this.chkList_Btn_Click);
             // 
             // single_Btn
             // 
@@ -176,11 +182,48 @@
             this.txtSingleResult.Size = new System.Drawing.Size(469, 20);
             this.txtSingleResult.TabIndex = 7;
             // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.btnUpload);
+            this.panel3.Controls.Add(this.txtCsv);
+            this.panel3.Controls.Add(this.label4);
+            this.panel3.Location = new System.Drawing.Point(90, 68);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(550, 341);
+            this.panel3.TabIndex = 11;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(254, 12);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(57, 13);
+            this.label4.TabIndex = 0;
+            this.label4.Text = "Check List";
+            // 
+            // txtCsv
+            // 
+            this.txtCsv.Location = new System.Drawing.Point(59, 91);
+            this.txtCsv.Name = "txtCsv";
+            this.txtCsv.Size = new System.Drawing.Size(202, 20);
+            this.txtCsv.TabIndex = 1;
+            // 
+            // btnUpload
+            // 
+            this.btnUpload.Location = new System.Drawing.Point(282, 91);
+            this.btnUpload.Name = "btnUpload";
+            this.btnUpload.Size = new System.Drawing.Size(75, 23);
+            this.btnUpload.TabIndex = 2;
+            this.btnUpload.Text = "Upload CSV";
+            this.btnUpload.UseVisualStyleBackColor = true;
+            this.btnUpload.Click += new System.EventHandler(this.btnUpload_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(813, 496);
+            this.Controls.Add(this.panel3);
             this.Controls.Add(this.txtSingleResult);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -190,6 +233,8 @@
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -210,6 +255,10 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtSingleResult;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Button btnUpload;
+        private System.Windows.Forms.TextBox txtCsv;
+        private System.Windows.Forms.Label label4;
     }
 }
 
