@@ -51,7 +51,10 @@ namespace DocImageClient
 
         private void btnSingleSearch_Click(object sender, EventArgs e)
         {
-            txtSingleResult.Text = proxy.scrapeTest(txtSingleHstNumber.Text, txtSingleBusinessName.Text);
+            Dictionary<string, bool> returnedDictionary = proxy.scrapeTest(txtSingleHstNumber.Text, txtSingleBusinessName.Text);
+            bool keyBool = returnedDictionary["key"];
+            
+
         }
 
         private void chkList_Btn_Click(object sender, EventArgs e)

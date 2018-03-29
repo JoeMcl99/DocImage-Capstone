@@ -81,6 +81,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="Connected Services\DocImageServiceReference\Arrays.xsd">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Connected Services\DocImageServiceReference\service.wsdl" />
     <None Include="Connected Services\DocImageServiceReference\service.xsd">
       <SubType>Designer</SubType>
