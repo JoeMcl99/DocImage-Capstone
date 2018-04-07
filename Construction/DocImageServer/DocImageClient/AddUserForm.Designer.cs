@@ -30,11 +30,11 @@
         {
             this.firstNameTB = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.passwordTB = new System.Windows.Forms.TextBox();
             this.passwordLabel = new System.Windows.Forms.Label();
             this.userLabel = new System.Windows.Forms.Label();
             this.usernameTB = new System.Windows.Forms.TextBox();
             this.registerBTN = new System.Windows.Forms.Button();
+            this.passwordTB = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // firstNameTB
@@ -52,13 +52,6 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(100, 20);
             this.textBox1.TabIndex = 12;
-            // 
-            // passwordTB
-            // 
-            this.passwordTB.Location = new System.Drawing.Point(134, 76);
-            this.passwordTB.Name = "passwordTB";
-            this.passwordTB.Size = new System.Drawing.Size(100, 20);
-            this.passwordTB.TabIndex = 11;
             // 
             // passwordLabel
             // 
@@ -93,6 +86,14 @@
             this.registerBTN.TabIndex = 7;
             this.registerBTN.Text = "Register";
             this.registerBTN.UseVisualStyleBackColor = true;
+            this.registerBTN.Click += new System.EventHandler(this.registerBTN_Click);
+            // 
+            // passwordTB
+            // 
+            this.passwordTB.Location = new System.Drawing.Point(134, 76);
+            this.passwordTB.Name = "passwordTB";
+            this.passwordTB.Size = new System.Drawing.Size(100, 20);
+            this.passwordTB.TabIndex = 11;
             // 
             // AddUserForm
             // 
@@ -117,10 +118,10 @@
 
         private System.Windows.Forms.Label firstNameTB;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox passwordTB;
         private System.Windows.Forms.Label passwordLabel;
         private System.Windows.Forms.Label userLabel;
         private System.Windows.Forms.TextBox usernameTB;
         private System.Windows.Forms.Button registerBTN;
+        private System.Windows.Forms.TextBox passwordTB;
     }
 }

@@ -51,3 +51,15 @@ C:\Users\msavatdy\Desktop\DocImage-Capstone\Construction\DocImageServer\DocImage
 C:\Users\msavatdy\Desktop\DocImage-Capstone\Construction\DocImageServer\DocImageClient\obj\Debug\DocImageClient.pdb
 C:\Users\jmclaughlin6572\Desktop\DocImageServer\DocImageClient\obj\Debug\DocImageClient.LoginForm.resources
 C:\Users\jzabar7531\Desktop\DocImage-Capstone\Construction\DocImageServer\DocImageClient\obj\Debug\DocImageClient.LoginForm.resources
+C:\Users\msavatdy2206\Desktop\DocImage-Capstone\Construction\DocImageServer\DocImageClient\obj\Debug\DocImageClient.csprojResolveAssemblyReference.cache
+C:\Users\msavatdy2206\Desktop\DocImage-Capstone\Construction\DocImageServer\DocImageClient\obj\Debug\DocImageClient.AddUserForm.resources
+C:\Users\msavatdy2206\Desktop\DocImage-Capstone\Construction\DocImageServer\DocImageClient\obj\Debug\DocImageClient.Form1.resources
+C:\Users\msavatdy2206\Desktop\DocImage-Capstone\Construction\DocImageServer\DocImageClient\obj\Debug\DocImageClient.LoginForm.resources
+C:\Users\msavatdy2206\Desktop\DocImage-Capstone\Construction\DocImageServer\DocImageClient\obj\Debug\DocImageClient.Properties.Resources.resources
+C:\Users\msavatdy2206\Desktop\DocImage-Capstone\Construction\DocImageServer\DocImageClient\obj\Debug\DocImageClient.csproj.GenerateResource.Cache
+C:\Users\msavatdy2206\Desktop\DocImage-Capstone\Construction\DocImageServer\DocImageClient\obj\Debug\DocImageClient.csproj.CoreCompileInputs.cache
+C:\Users\msavatdy2206\Desktop\DocImage-Capstone\Construction\DocImageServer\DocImageClient\obj\Debug\DocImageClient.exe
+C:\Users\msavatdy2206\Desktop\DocImage-Capstone\Construction\DocImageServer\DocImageClient\obj\Debug\DocImageClient.pdb
+C:\Users\msavatdy2206\Desktop\DocImage-Capstone\Construction\DocImageServer\DocImageClient\bin\Debug\DocImageClient.exe.config
+C:\Users\msavatdy2206\Desktop\DocImage-Capstone\Construction\DocImageServer\DocImageClient\bin\Debug\DocImageClient.exe
+C:\Users\msavatdy2206\Desktop\DocImage-Capstone\Construction\DocImageServer\DocImageClient\bin\Debug\DocImageClient.pdb

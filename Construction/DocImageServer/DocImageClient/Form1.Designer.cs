@@ -278,7 +278,7 @@
             this.linkLabel1.TabIndex = 14;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "Contact Information";
-            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
+          
             // 
             // linkLabel2
             // 
@@ -289,7 +289,7 @@
             this.linkLabel2.TabIndex = 15;
             this.linkLabel2.TabStop = true;
             this.linkLabel2.Text = "Terms and Conditions";
-            this.linkLabel2.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel2_LinkClicked);
+
             // 
             // linkLabel3
             // 
@@ -300,7 +300,7 @@
             this.linkLabel3.TabIndex = 16;
             this.linkLabel3.TabStop = true;
             this.linkLabel3.Text = "Privacy";
-            this.linkLabel3.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel3_LinkClicked);
+           
             // 
             // pictureBox2
             // 
@@ -321,7 +321,7 @@
             this.radioButton1.TabIndex = 3;
             this.radioButton1.TabStop = true;
             this.radioButton1.UseVisualStyleBackColor = true;
-            this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged_1);
+          
             // 
             // radioButton2
             // 

@@ -34,9 +34,16 @@ namespace DocImageClient
             this.Close();
         }
 
+        private void registerButton_Click(object sender, EventArgs e)
+        {
+            AddUserForm f = new AddUserForm();
+            this.Hide();
+            f.Show();
+        }
 
 
-        
+
+
         //private boolean is logeed in successfull
     }
 }

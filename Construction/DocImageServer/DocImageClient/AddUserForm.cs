@@ -17,14 +17,13 @@ namespace DocImageClient
         public AddUserForm()
         {
             InitializeComponent();
+            passwordTB.PasswordChar = '*';
         }
 
         public object DBContext { get; private set; }
 
-        private void addUser()
+        private Boolean AddUser()
         {
-
-
             String username = usernameTB.Text;
             String password = passwordHash();
 
@@ -40,31 +39,38 @@ namespace DocImageClient
 
             try
             {
-                cnn.Open();
-
+                cnn.Open();                
                 sql = "insert into USERS ([userName], [passwordHash], [fullName], [creationDate]) values(@username,@passwordHash,@fullname,@creationDate)";
-
+                
                 using (SqlCommand cmd = new SqlCommand(sql, cnn))
                 {
                     cmd.Parameters.AddWithValue("@username", username);
                     cmd.Parameters.AddWithValue("@passwordHash", password);
                     cmd.Parameters.AddWithValue("@fullname", fullname);
                     cmd.Parameters.AddWithValue("@creationDate", thisDay);
-                    cmd.ExecuteNonQuery();
-                    MessageBox.Show("Row inserted !! ");
+                    cmd.ExecuteNonQuery();                   
                 }
-
+             
                 cnn.Close();
+                return true;
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.ToString());
+                return false;
             }
         }
         private void registerBTN_Click(object sender, EventArgs e)
         {
+            if (AddUser())
+            {
+                Form1 f = new Form1();
+                this.Hide();
+                f.Show();
+            }
+            else {
 
-            addUser();
+            }
         }
 
         private string passwordHash()
