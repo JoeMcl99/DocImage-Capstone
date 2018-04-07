@@ -46,7 +46,7 @@ namespace DocImageServer
             {
                 return returnDictionary;
             }
-            
+
 
 
             //Setting up the Browser
@@ -58,15 +58,15 @@ namespace DocImageServer
             //Goes to the Canada Revenue Agency Website and presses the Search Now button
             WebPage homePage = browser.NavigateToPage(new Uri("https://www.canada.ca/en/revenue-agency/services/e-services/e-services-businesses/confirming-a-gst-hst-account-number.html"));
             WebPage blogPage = homePage.FindLinks(By.Text("Search now")).Single().Click();
-            
-            
+
+
             //Finds the form for the terms and conditions, and submits it 
             HtmlNode termsForm = blogPage.Html.CssSelect("form").ElementAt(1);
             PageWebForm acceptForm = new PageWebForm(termsForm, browser);
             WebPage registryPage = acceptForm.Submit();
 
-                        
-           //Changing the Business name element from a textarea to a text input so that it can be filled and submitted
+
+            //Changing the Business name element from a textarea to a text input so that it can be filled and submitted
             HtmlNode newbusinessName = registryPage.Html.CssSelect("#businessName").Single();
             newbusinessName.Name = "input";
             newbusinessName.SetAttributeValue("type", "text");
@@ -91,7 +91,7 @@ namespace DocImageServer
             if (resultNode.Count() != 10)
             {
                 HtmlNode correctNode = resultNode.ElementAt(10);
-                returnDictionary.Add("NumberNotRegisteredError", true);              
+                returnDictionary.Add("NumberNotRegisteredError", true);
             }
 
 

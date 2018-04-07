@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
-using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -18,8 +17,6 @@ namespace DocImageClient
         public Form1()
         {
             InitializeComponent();
-            BackColor = Color.White;
-
 
 
 
@@ -35,7 +32,6 @@ namespace DocImageClient
             panel1.Visible = true;
             panel2.Visible = false;
             panel3.Visible = false;
-            txtSingleResult.Visible = false;
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -44,7 +40,6 @@ namespace DocImageClient
             panel1.Visible = true;
             panel2.Visible = false;
             panel3.Visible = false;
-            txtSingleResult.Visible = false;
         }
 
         private void single_Btn_Click(object sender, EventArgs e)
@@ -52,7 +47,6 @@ namespace DocImageClient
             panel1.Visible = false;
             panel2.Visible = true;
             panel3.Visible = false;
-            txtSingleResult.Visible = true;
         }
 
         private void btnSingleSearch_Click(object sender, EventArgs e)
@@ -70,7 +64,6 @@ namespace DocImageClient
             panel3.Visible = true;
             panel1.Visible = false;
             panel2.Visible = false;
-            txtSingleResult.Visible = true;
 
         }
 
@@ -85,6 +78,14 @@ namespace DocImageClient
                     {
                         System.IO.FileInfo fi = new System.IO.FileInfo(ofd.FileName);
                         txtCsv.Text = fi.Name;
+                        CSVParser cv = new CSVParser(ofd);
+
+
+                        List<string[]> splitCsv = cv.ParseCsv();
+                        foreach (var item in splitCsv)
+                        {
+                            //Your code here
+                        }
                     }
                 }
             }
@@ -93,34 +94,5 @@ namespace DocImageClient
                 MessageBox.Show(ex.Message, "Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
-        private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            System.Diagnostics.Process.Start("https://www.canada.ca/en/services/taxes.html");
-        }
-
-        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            System.Diagnostics.Process.Start("https://www.canada.ca/en/revenue-agency/corporate/contact-information.html");
-        }
-
-        private void linkLabel3_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            System.Diagnostics.Process.Start("https://www.canada.ca/en/transparency/privacy.html");
-        }
-
-        private void radioButton1_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void radioButton1_CheckedChanged_1(object sender, EventArgs e)
-        {
-
-        }
-
-      
-
-    
     }
 }
