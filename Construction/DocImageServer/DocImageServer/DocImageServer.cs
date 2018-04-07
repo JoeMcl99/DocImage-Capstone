@@ -20,8 +20,35 @@ namespace DocImageServer
             return string.Format("You entered: {0}", value);
         }
 
-        public string scrapeTest(string hstNumber, string legalName)
+        public Dictionary<string, bool> scrapeTest(string hstNumber, string legalName)
         {
+            Dictionary<string, bool> returnDictionary = new Dictionary<string, bool>();
+            bool error = false;
+            int throwaway;
+            bool isNumeric = int.TryParse(legalName, out throwaway);
+            //Validate input here
+            if (hstNumber == "")
+            {
+                returnDictionary.Add("NoHstNumberError", true);
+                error = true;
+            }
+            else if (!isNumeric)
+            {
+                returnDictionary.Add("HstNotNumericError", true);
+                error = true;
+            }
+            if (legalName == "")
+            {
+                returnDictionary.Add("NoLegalNameError", true);
+                error = true;
+            }
+            if (error)
+            {
+                return returnDictionary;
+            }
+            
+
+
             //Setting up the Browser
             System.Net.ServicePointManager.SecurityProtocol = System.Net.SecurityProtocolType.Tls12;
             ScrapingBrowser browser = new ScrapingBrowser();
@@ -64,11 +91,11 @@ namespace DocImageServer
             if (resultNode.Count() != 10)
             {
                 HtmlNode correctNode = resultNode.ElementAt(10);
-                return "GST / HST number registered on this transaction date";               
-            }                        
-            else return "Was not Successful";
+                returnDictionary.Add("NumberNotRegisteredError", true);              
+            }
 
 
+            return returnDictionary;
         }
     }
 }

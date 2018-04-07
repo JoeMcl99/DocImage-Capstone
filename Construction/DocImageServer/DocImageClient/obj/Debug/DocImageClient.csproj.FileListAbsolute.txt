@@ -49,3 +49,4 @@ C:\Users\msavatdy\Desktop\DocImage-Capstone\Construction\DocImageServer\DocImage
 C:\Users\msavatdy\Desktop\DocImage-Capstone\Construction\DocImageServer\DocImageClient\obj\Debug\DocImageClient.csproj.CoreCompileInputs.cache
 C:\Users\msavatdy\Desktop\DocImage-Capstone\Construction\DocImageServer\DocImageClient\obj\Debug\DocImageClient.exe
 C:\Users\msavatdy\Desktop\DocImage-Capstone\Construction\DocImageServer\DocImageClient\obj\Debug\DocImageClient.pdb
+C:\Users\jmclaughlin6572\Desktop\DocImageServer\DocImageClient\obj\Debug\DocImageClient.LoginForm.resources

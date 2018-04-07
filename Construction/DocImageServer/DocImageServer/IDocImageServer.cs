@@ -16,7 +16,7 @@ namespace DocImageServer
         string GetData(int value);
 
         [OperationContract]
-        string scrapeTest(string hstNumber, string legalName);
+        Dictionary<string, bool> scrapeTest(string hstNumber, string legalName);
 
 
         // TODO: Add your service operations here
