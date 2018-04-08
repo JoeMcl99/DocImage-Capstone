@@ -34,7 +34,7 @@ namespace DocImageClient
             string connetionString = null;
             string sql = null;
             SqlConnection cnn;
-            connetionString = "Data Source=2A207-B03\\SQLEXPRESS;Initial Catalog=capstoneDatabase;Integrated Security=True";
+            connetionString = "Data Source=2A207-C06\\SQLEXPRESS;Initial Catalog=capstoneDB;Integrated Security=True";
             cnn = new SqlConnection(connetionString);
 
             try
@@ -64,7 +64,8 @@ namespace DocImageClient
         {
             if (AddUser())
             {
-                Form1 f = new Form1();
+                MessageBox.Show("Succesfully Added!");
+                LoginForm f = new LoginForm();
                 this.Hide();
                 f.Show();
             }
