@@ -63,3 +63,4 @@ C:\Users\msavatdy2206\Desktop\DocImage-Capstone\Construction\DocImageServer\DocI
 C:\Users\msavatdy2206\Desktop\DocImage-Capstone\Construction\DocImageServer\DocImageClient\bin\Debug\DocImageClient.exe.config
 C:\Users\msavatdy2206\Desktop\DocImage-Capstone\Construction\DocImageServer\DocImageClient\bin\Debug\DocImageClient.exe
 C:\Users\msavatdy2206\Desktop\DocImage-Capstone\Construction\DocImageServer\DocImageClient\bin\Debug\DocImageClient.pdb
+C:\Users\jzabar7531\Desktop\DocImage-Capstone\Construction\DocImageServer\DocImageClient\obj\Debug\DocImageClient.AddUserForm.resources

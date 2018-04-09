@@ -59,10 +59,12 @@
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // exit_Btn
@@ -197,13 +199,14 @@
             // 
             // panel3
             // 
+            this.panel3.Controls.Add(this.dataGridView1);
             this.panel3.Controls.Add(this.label7);
             this.panel3.Controls.Add(this.btnUpload);
             this.panel3.Controls.Add(this.txtCsv);
             this.panel3.Controls.Add(this.label4);
             this.panel3.Location = new System.Drawing.Point(67, 68);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(573, 341);
+            this.panel3.Size = new System.Drawing.Size(736, 341);
             this.panel3.TabIndex = 11;
             // 
             // label7
@@ -278,7 +281,6 @@
             this.linkLabel1.TabIndex = 14;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "Contact Information";
-          
             // 
             // linkLabel2
             // 
@@ -289,7 +291,6 @@
             this.linkLabel2.TabIndex = 15;
             this.linkLabel2.TabStop = true;
             this.linkLabel2.Text = "Terms and Conditions";
-
             // 
             // linkLabel3
             // 
@@ -300,7 +301,6 @@
             this.linkLabel3.TabIndex = 16;
             this.linkLabel3.TabStop = true;
             this.linkLabel3.Text = "Privacy";
-           
             // 
             // pictureBox2
             // 
@@ -321,7 +321,6 @@
             this.radioButton1.TabIndex = 3;
             this.radioButton1.TabStop = true;
             this.radioButton1.UseVisualStyleBackColor = true;
-          
             // 
             // radioButton2
             // 
@@ -351,6 +350,15 @@
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(816, 2);
             this.label9.TabIndex = 20;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(3, 117);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(727, 202);
+            this.dataGridView1.TabIndex = 20;
             // 
             // Form1
             // 
@@ -385,6 +393,7 @@
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -421,6 +430,7 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }
 

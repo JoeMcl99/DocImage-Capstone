@@ -27,12 +27,12 @@ namespace DocImageClient
 
         private void loginButton_Click(object sender, EventArgs e)
         {
-            if (IsValidUser())
-            {
+            //if (IsValidUser())
+            //{
                 Form1 f = new Form1();
                 this.Hide();
                 f.Show();
-            }           
+            //}           
         }
 
         private void exitButton_Click(object sender, EventArgs e)

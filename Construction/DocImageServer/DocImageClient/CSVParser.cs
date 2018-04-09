@@ -29,6 +29,7 @@ namespace DocImageClient
                 parser.SetDelimiters(",");
 
                 List<string[]> resultList = new List<string[]>();
+                parser.ReadLine();
                 while (!parser.EndOfData)
                 {
                     //Process row

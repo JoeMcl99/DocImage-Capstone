@@ -18,6 +18,7 @@ namespace DocImageClient
         {
             InitializeComponent();
 
+            BackColor = Color.White;
 
 
         }
@@ -32,6 +33,8 @@ namespace DocImageClient
             panel1.Visible = true;
             panel2.Visible = false;
             panel3.Visible = false;
+
+            txtSingleResult.Visible = false;
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -40,6 +43,7 @@ namespace DocImageClient
             panel1.Visible = true;
             panel2.Visible = false;
             panel3.Visible = false;
+            txtSingleResult.Visible = false;
         }
 
         private void single_Btn_Click(object sender, EventArgs e)
@@ -47,6 +51,7 @@ namespace DocImageClient
             panel1.Visible = false;
             panel2.Visible = true;
             panel3.Visible = false;
+            txtSingleResult.Visible = true;
         }
 
         private void btnSingleSearch_Click(object sender, EventArgs e)
@@ -64,6 +69,7 @@ namespace DocImageClient
             panel3.Visible = true;
             panel1.Visible = false;
             panel2.Visible = false;
+            txtSingleResult.Visible = false;
 
         }
 
@@ -76,22 +82,78 @@ namespace DocImageClient
 
                     if (ofd.ShowDialog() == DialogResult.OK)
                     {
+                        DataTable dt = new DataTable();
                         System.IO.FileInfo fi = new System.IO.FileInfo(ofd.FileName);
+                        
                         txtCsv.Text = fi.Name;
+                     //   BindDataCSV(txtCsv.Text);
                         CSVParser cv = new CSVParser(ofd);
-
+                        dt.Columns.Add("HstNumber", typeof(string));
+                        dt.Columns.Add("BusinessName", typeof(string));
+                        dt.Columns.Add("Result", typeof(string));
 
                         List<string[]> splitCsv = cv.ParseCsv();
                         foreach (var item in splitCsv)
                         {
-                            //Your code here
+                            
+                            DataRow dr = dt.NewRow();
+                            string hstNumber = item[0];
+                            string legalName = item[1];
+                            Dictionary<string, bool> returnDictionary = proxy.scrapeTest(hstNumber, legalName);
+
+                            string errorString = "";
+                            foreach (var error in returnDictionary)
+                            {
+                                errorString += error.Key;
+                                
+                            }
+                            
+                            dt.Rows.Add(hstNumber, legalName, errorString);
+                            dataGridView1.DataSource = dt;
                         }
                     }
+                   
                 }
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message, "Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void BindDataCSV(string filePath)
+        {
+            DataTable dt = new DataTable();
+            string[] lines = System.IO.File.ReadAllLines(filePath);
+            if(lines.Length > 0)
+            {
+                string firstLine = lines[0];
+                string[] headerLables = firstLine.Split(',');
+
+                foreach(string headerWord in headerLables)
+                {
+                    dt.Columns.Add(new DataColumn(headerWord));
+                }
+
+                //for data
+
+            for(int r =1; r<lines.Length;r++)
+                {
+                    string[] dataWords = lines[r].Split(',');
+                    DataRow dr = dt.NewRow();
+                    int columnIndex = 0;
+                    foreach (string headerWord in headerLables)
+                    {
+                       
+                        
+                        dr[headerWord] = dataWords[columnIndex++];
+                    }
+                    dt.Rows.Add(dr);
+                }
+            }
+            if(dt.Rows.Count>0)
+            {
+                dataGridView1.DataSource = dt;
             }
         }
     }
