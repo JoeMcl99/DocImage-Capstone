@@ -102,9 +102,19 @@ namespace DocImageClient
                             Dictionary<string, bool> returnDictionary = proxy.scrapeTest(hstNumber, legalName);
 
                             string errorString = "";
+                            bool first = true;
                             foreach (var error in returnDictionary)
                             {
-                                errorString += error.Key;
+                                if (first)
+                                {
+                                    errorString += error.Key;
+                                    first = false;
+                                }
+                                else
+                                {
+                                    errorString += ", " + error.Key;
+                                }
+                                
                                 
                             }
                             
